@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="join message mambership"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="18dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:weightSum="3"
+        android:background="@drawable/cdcd_kam_stroke"
+        android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/green_color_round"
+            >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Single Message Membership"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 Message"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Per month in a Year"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:weightSum="3"
+        android:background="@drawable/cdcd_kam_stroke"
+        android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="18dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/green_color_round"
+            >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Couple Message Membership"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 Message"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Per month in a Year"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Vedic Touch</string>
+    <string name="name"></string>
+    <string name="tap"><![CDATA[TAP & HOLD TO EDIT NOTES]]></string>
+</resources>

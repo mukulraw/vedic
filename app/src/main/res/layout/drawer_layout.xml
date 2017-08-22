@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454343">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="18dp"
+        android:padding="10dp"
+        android:background="@drawable/cdcd_stroke_black">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginStart="7dp"
+    android:layout_marginEnd="18dp"
+    android:drawableStart="@drawable/drawer_profile"
+    android:background="@drawable/white_background_button"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mukul Rawat"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="2dp"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vedic touch credit $ 0.0"
+        android:textColor="#ffffff"
+
+        />
+</LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textColor="#ffffff"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:padding="18dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/end_arrow"
+        />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#545353"
+    android:layout_marginEnd="45dp"
+    android:layout_marginStart="25dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business"
+        android:textColor="#ffffff"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:padding="18dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/end_arrow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#545353"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="25dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="#ffffff"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:padding="18dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/end_arrow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#545353"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="25dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gifts Card"
+        android:textColor="#ffffff"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:padding="18dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/end_arrow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#545353"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="25dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Membership"
+        android:textColor="#ffffff"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:padding="18dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/end_arrow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#545353"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="25dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Experience Center"
+        android:textColor="#ffffff"
+        android:drawablePadding="10dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:padding="18dp"
+        android:drawableEnd="@drawable/end_arrow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#545353"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="25dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invite Friends"
+        android:drawablePadding="10dp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:padding="18dp"
+        android:drawableEnd="@drawable/end_arrow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#545353"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="25dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Team"
+        android:drawablePadding="10dp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:padding="18dp"
+        android:drawableEnd="@drawable/end_arrow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#545353"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vedic Touch"
+        android:drawablePadding="10dp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="18dp"
+        android:textStyle="italic"
+        android:drawableEnd="@drawable/end_arrow"
+        />
+</LinearLayout>
+</ScrollView>
