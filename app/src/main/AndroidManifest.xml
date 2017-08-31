@@ -16,14 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Splash">
-
-
-        </activity>
-        <activity android:name=".Slide">
-
-
-        </activity>
+        <activity android:name=".Splash"></activity>
+        <activity android:name=".Slide"></activity>
+        <activity android:name=".Category"></activity>
     </application>
 
 </manifest>

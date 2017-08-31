@@ -3,6 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/top_round_white"
+    android:id="@+id/book"
     >
 
 
@@ -12,10 +13,11 @@
         android:layout_gravity="center_horizontal"
         android:text="SESSION TYPE"
         android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="16sp"
+        android:drawablePadding="-10dp"
         android:textColor="#000000"
-        android:drawableTop="@drawable/up"
-        android:drawableBottom="@drawable/down"
+        android:drawableTop="@drawable/down"
+        android:drawableBottom="@drawable/down2"
         />
 
     <android.support.design.widget.TabLayout

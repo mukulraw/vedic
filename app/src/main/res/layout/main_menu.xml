@@ -30,13 +30,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@drawable/gradient"
                 >
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/top_round_back"
-                    />
+
 
             <RelativeLayout
                 android:id="@+id/anchor"
@@ -45,16 +42,25 @@
 
 
 
-                <ImageView
+                <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/thai" />
+                    android:src="@drawable/thai"
+                    app:riv_border_width="0dp"
+                    app:riv_corner_radius_top_left="15dp"
+                    app:riv_corner_radius_top_right="15dp"
+                    />
 
-                <ImageView
+                <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:src="#55000000" />
+                    android:src="#55000000"
+                    android:scaleType="centerCrop"
+                    app:riv_border_width="0dp"
+                    app:riv_corner_radius_top_left="15dp"
+                    app:riv_corner_radius_top_right="15dp"
+                    />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
