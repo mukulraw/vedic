@@ -96,4 +96,13 @@ public class Category extends AppCompatActivity {
 
 
     }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        overridePendingTransition(0 , R.anim.slide_down);
+
+    }
 }

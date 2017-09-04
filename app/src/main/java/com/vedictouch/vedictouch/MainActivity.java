@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -37,8 +38,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Log.d("asd" , "asdasdasd");
+
                 Intent intent = new Intent(MainActivity.this , Category.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_up , 0);
 
             }
         });
