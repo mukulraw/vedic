@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:id="@+id/back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="sign up"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:text="Facebook"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:background="@drawable/button_round"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Gmail"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:background="@drawable/button_red"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="First Name"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_cdcdcd"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:background="@drawable/button_cdcdcd"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="Create Password"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_cdcdcd"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="Mobile Number"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:inputType="phone"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_cdcdcd"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="LOG IN"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_green"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="18dp"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

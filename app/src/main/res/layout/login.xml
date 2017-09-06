@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
 
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
+        android:orientation="vertical"
+
         >
 
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="0.2">
+            >
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/startarrow"/>
-        </LinearLayout>
+                android:layout_centerVertical="true"
+                android:background="@drawable/back"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:id="@+id/back"
+                />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="login"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1.80">
-
-           <TextView
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:text="ACCOUNT"
-               android:textColor="#000000"
-               android:padding="18dp"
-               android:textSize="20sp"
-               android:gravity="center"
-               android:layout_gravity="center_horizontal"/>
-        </LinearLayout>
-    </LinearLayout>
+        </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="18dp"
+        android:padding="15dp"
+        android:textColor="#ffffff"
         android:text="Facebook"
+        android:textAllCaps="true"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
         android:background="@drawable/button_round"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
 
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="or"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
         android:padding="5dp"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
@@ -72,114 +72,86 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="18dp"
+        android:padding="15dp"
         android:text="Gmail"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
         android:background="@drawable/button_red"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+
         />
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="18dp"
-        android:text="First name"
+        android:padding="15dp"
+        android:hint="Email"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
-        android:layout_marginTop="18dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/button_cdcdcd"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         />
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="18dp"
-        android:text="Email"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:hint="Password"
         android:background="@drawable/button_cdcdcd"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="25dp"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         />
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="18dp"
-        android:text="Create password"
-        android:background="@drawable/button_cdcdcd"
-        android:layout_marginStart="40dp"
-        android:layout_gravity="center"
-        android:gravity="center_horizontal"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="18dp"
-        android:text="Mobile Number"
-        android:background="@drawable/button_cdcdcd"
-        android:layout_marginStart="40dp"
-        android:layout_gravity="center"
-        android:gravity="center_horizontal"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="18dp"
+        android:padding="15dp"
         android:text="LOG IN"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="18dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="#ffffff"
         android:background="@drawable/button_green"
         android:layout_marginTop="10dp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="18dp"
+        android:padding="10dp"
         android:text="Forget Password?"
         android:layout_gravity="end"
         android:gravity="end"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="18dp"
+        android:textColor="#ffffff"
+        android:layout_marginEnd="25dp"
         android:textStyle="bold"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="18dp"
+        android:padding="15dp"
         android:text="Having trouble logging in?"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="18dp"
+        android:textColor="#ffffff"
         android:textStyle="bold"
         />
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_green"
-            android:layout_marginTop="18dp"
-            android:drawableStart="@drawable/setting"
-            android:drawableEnd="@drawable/question"
-            android:drawablePadding="10dp"
-            />
+
 </LinearLayout>
 
 </ScrollView>
