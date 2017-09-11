@@ -72,6 +72,23 @@ public class Menu extends Fragment {
         });
 
 
+        account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fragmentManager = ((MainActivity)getContext()).getSupportFragmentManager();
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left , R.anim.enter_from_left, R.anim.exit_to_right);
+                Account fragment = new Account();
+                ft.replace(R.id.layout_to_replace, fragment);
+                ft.addToBackStack(null);
+                //ft.setTransition(FragmentTransaction.TRANSIT_ENTER_MASK);
+                ft.commit();
+
+
+            }
+        });
+
 
         return view;
     }

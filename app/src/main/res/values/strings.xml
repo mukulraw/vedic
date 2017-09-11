@@ -2,4 +2,6 @@
     <string name="app_name">Vedic Touch</string>
     <string name="name"></string>
     <string name="tap"><![CDATA[TAP & HOLD TO EDIT NOTES]]></string>
+    <string name="join_our_nvedic_touch_membership">Join our\nVedic Touch Membership</string>
+    <string name="join_now"><u>Join Now</u></string>
 </resources>
