@@ -9,6 +9,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,9 +27,11 @@ import android.widget.TextClock;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.desarrollodroide.libraryfragmenttransactionextended.FragmentTransactionExtended;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
+import com.vedictouch.vedictouch.SelectionPages.Page1;
 import com.vedictouch.vedictouch.massagePOJO.MassageApus;
 import com.vedictouch.vedictouch.massagePOJO.massageBean;
 
@@ -50,8 +53,10 @@ public class Category extends AppCompatActivity {
 
     CoordinatorLayout categoryLayout;
     ProgressBar progress;
-    TabLayout tabs;
-    ViewPager pager;
+
+
+    int selectedNumber = 0;
+
 
     BottomSheetBehavior bottomSheetBehavior;
 
@@ -63,8 +68,7 @@ public class Category extends AppCompatActivity {
         progress = (ProgressBar)findViewById(R.id.progress);
 
         back = (ImageButton)findViewById(R.id.back);
-        tabs = (TabLayout)findViewById(R.id.tabs);
-        pager = (ViewPager)findViewById(R.id.pager);
+
 
         categoryLayout = (CoordinatorLayout)findViewById(R.id.category_layout);
 
@@ -86,8 +90,29 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                loadMassages("2");
-                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+
+
+
+                if (selectedNumber == 2)
+                {
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                }
+                else
+                {
+
+                    FragmentManager fm = getSupportFragmentManager();
+                    FragmentTransaction ft = fm.beginTransaction();
+                    Page1 frag = new Page1();
+                    Bundle b = new Bundle();
+                    b.putString("id" , String.valueOf("2"));
+                    frag.setArguments(b);
+                    ft.replace(R.id.replace , frag);
+                    ft.commit();
+
+
+                }
+
+                selectedNumber = 2;
 
             }
         });
@@ -96,9 +121,27 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                loadMassages("3");
-                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                if (selectedNumber == 3)
+                {
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                }
+                else
+                {
 
+                    FragmentManager fm = getSupportFragmentManager();
+                    FragmentTransaction ft = fm.beginTransaction();
+                    Page1 frag = new Page1();
+                    Bundle b = new Bundle();
+                    b.putString("id" , String.valueOf("3"));
+                    frag.setArguments(b);
+                    ft.replace(R.id.replace , frag);
+                    ft.commit();
+
+
+                }
+
+
+                selectedNumber = 3;
             }
         });
 
@@ -106,9 +149,26 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                loadMassages("4");
-                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
 
+                if (selectedNumber == 4)
+                {
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                }
+                else
+                {
+
+                    FragmentManager fm = getSupportFragmentManager();
+                    FragmentTransaction ft = fm.beginTransaction();
+                    Page1 frag = new Page1();
+                    Bundle b = new Bundle();
+                    b.putString("id" , String.valueOf("4"));
+                    frag.setArguments(b);
+                    ft.replace(R.id.replace , frag);
+                    ft.commit();
+
+
+                }
+                selectedNumber = 4;
             }
         });
 
@@ -116,9 +176,26 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                loadMassages("5");
-                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
 
+                if (selectedNumber == 5)
+                {
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                }
+                else
+                {
+
+                    FragmentManager fm = getSupportFragmentManager();
+                    FragmentTransaction ft = fm.beginTransaction();
+                    Page1 frag = new Page1();
+                    Bundle b = new Bundle();
+                    b.putString("id" , String.valueOf("5"));
+                    frag.setArguments(b);
+                    ft.replace(R.id.replace , frag);
+                    ft.commit();
+
+
+                }
+                selectedNumber = 5;
             }
         });
 
@@ -126,9 +203,26 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                loadMassages("6");
-                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
 
+                if (selectedNumber == 6)
+                {
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                }
+                else
+                {
+
+                    FragmentManager fm = getSupportFragmentManager();
+                    FragmentTransaction ft = fm.beginTransaction();
+                    Page1 frag = new Page1();
+                    Bundle b = new Bundle();
+                    b.putString("id" , String.valueOf("6"));
+                    frag.setArguments(b);
+                    ft.replace(R.id.replace , frag);
+                    ft.commit();
+
+
+                }
+                selectedNumber = 6;
             }
         });
 
@@ -145,123 +239,15 @@ public class Category extends AppCompatActivity {
 
 
 
-    }
 
 
-    public void loadMassages(String id)
-    {
-
-        progress.setVisibility(View.VISIBLE);
-
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://technobrix.in")
-                .addConverterFactory(ScalarsConverterFactory.create())
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
 
 
-        allAPIs cr = retrofit.create(allAPIs.class);
-
-        Call<massageBean> call = cr.getMassages(id);
-
-        call.enqueue(new Callback<massageBean>() {
-            @Override
-            public void onResponse(Call<massageBean> call, Response<massageBean> response) {
-
-                for (int i = 0 ; i < response.body().getMassageApi().size() ; i++ )
-                {
-                    tabs.addTab(tabs.newTab().setText(response.body().getMassageApi().get(i).getTitle()));
-                }
-
-                PageAdapter adapter = new PageAdapter(getSupportFragmentManager() , response.body().getMassageApi());
-                pager.setAdapter(adapter);
-
-                tabs.setupWithViewPager(pager);
-
-
-                for (int i = 0 ; i < response.body().getMassageApi().size() ; i++ )
-                {
-                    tabs.getTabAt(i).setText(response.body().getMassageApi().get(i).getTitle());
-                }
-
-                progress.setVisibility(View.GONE);
-
-            }
-
-            @Override
-            public void onFailure(Call<massageBean> call, Throwable t) {
-                progress.setVisibility(View.GONE);
-            }
-        });
 
     }
 
 
-    public class PageAdapter extends FragmentStatePagerAdapter
-    {
-        List<MassageApus> list = new ArrayList<>();
 
-
-        public PageAdapter(FragmentManager fm , List<MassageApus> list) {
-            super(fm);
-            this.list = list;
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-
-            Pages page = new Pages();
-            Bundle b = new Bundle();
-            b.putString("url" , list.get(position).getImage());
-            b.putString("name" , list.get(position).getTitle());
-            page.setArguments(b);
-
-            return page;
-        }
-
-        @Override
-        public int getCount() {
-            return list.size();
-        }
-    }
-
-
-    public static class Pages extends Fragment
-    {
-        String url , name;
-        ImageView image;
-        TextView title;
-
-
-        @Nullable
-        @Override
-        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-            View view = inflater.inflate(R.layout.massage_model , container , false);
-
-            image = (ImageView) view.findViewById(R.id.image);
-            title = (TextView)view.findViewById(R.id.title);
-
-            url = getArguments().getString("url");
-            name = getArguments().getString("name");
-
-            title.setText(name);
-
-            //ImageLoader loader = ImageLoader.getInstance();
-
-            Glide
-                    .with(getActivity()) // replace with 'this' if it's in activity
-                    .load(url)
-                    .asGif()
-                    // show error drawable if the image is not a gif
-                    .into(image);
-
-
-
-
-
-            return view;
-        }
-    }
 
 
     @Override

@@ -14,38 +14,26 @@
         >
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="SESSION TYPE"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:drawablePadding="-10dp"
-        android:textColor="#000000"
-        android:drawableTop="@drawable/down"
-        android:drawableBottom="@drawable/down2"
-        />
 
-    <android.support.design.widget.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tabs"
-        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/down"
+            android:layout_gravity="center_horizontal"
+            />
 
-    <android.support.v4.view.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/pager"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/replace"
+            android:orientation="vertical"
+            />
+
+
 
     </LinearLayout>
 
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:id="@+id/progress"
-        android:visibility="gone"
-        />
+
 
 </RelativeLayout>
